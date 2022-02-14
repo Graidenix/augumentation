@@ -32,9 +32,7 @@ app.get('/', (req, res) => {
     res.json(availableRoutes);
 });
 
-app.listen(3001, () => {
-    console.log('available on 0.0.0.0:3001')
-});
+module.exports = app;
 
 
 

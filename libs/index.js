@@ -1,3 +1,4 @@
+const fs = require("fs");
 const availableRoutes = [];
 
 const loggingRoutes = (layers) => {
@@ -14,7 +15,20 @@ const loggingRoutes = (layers) => {
     });
 };
 
+
+
+const getRoutes = () => {
+    const files = fs.readdirSync('./utils');
+    return files.filter((name) => name.substr(-3) === '.js').reduce((acc, filename) => {
+        const func = require('../utils/' + filename);
+        const endpoint = filename.replace(/\.js$/, '');
+
+        return [...acc, {endpoint, func}];
+    }, []);
+}
+
 module.exports = {
     loggingRoutes,
+    getRoutes,
     availableRoutes
 }

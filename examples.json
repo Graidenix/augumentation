@@ -1,0 +1,64 @@
+[
+  {
+    "method": "string",
+    "payload": "Approved-Sales"
+  },
+  {
+    "method": "dateIso",
+    "payload": "2022-01-10 10:22:45"
+  },
+  {
+    "method": "dateIso",
+    "payload": "02/14/2022"
+  },
+  {
+    "method": "sum",
+    "payload": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "method": "parseInt",
+    "payload": 3.141592653589793
+  },
+  {
+    "method": "parseInt",
+    "payload": "TEST"
+  },
+  {
+    "method": "replace",
+    "payload": {
+      "subject": "Approved-Sales",
+      "pattern": "[A-Z\\W]",
+      "replace": "_"
+    }
+  },
+  {
+    "method": "concat",
+    "payload": {
+      "items": [
+        "John",
+        "Doe",
+        "Mr."
+      ],
+      "glue": " "
+    }
+  },
+  {
+    "method": "interval",
+    "payload": {
+      "from": "2022-01-10 10:22:45"
+    }
+  },
+  {
+    "method": "interval",
+    "payload": {
+      "from": "2022-01-10 10:22:44.452",
+      "to": "2022-01-12 10:22:45"
+    }
+  }
+]

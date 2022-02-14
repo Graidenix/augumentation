@@ -1,0 +1,12 @@
+{
+  "name": "augumentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Graidenix/augumentation.git",
+  "author": "godajiu <graidenix@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
+}

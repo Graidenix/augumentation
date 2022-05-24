@@ -9,7 +9,7 @@ const loggingRoutes = (layers) => {
                     method: method.toUpperCase(),
                     path: '.' + layer.route.path,
                 });
-                console.info(`${method.toUpperCase().padEnd(5)} /api/v1${layer.route.path}`);
+                console.info(`${method.toUpperCase().padEnd(5)} /api${layer.route.path}`);
             }
         });
     });

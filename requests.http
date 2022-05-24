@@ -1,0 +1,36 @@
+### String Concat
+// @no-log
+POST http://localhost:8000/api/concat
+Content-Type: application/json
+Accept: application/json
+
+{
+  "items": ["Lorem", "ipsum", "dolor", "sit", "amet"],
+  "glue": "."
+}
+
+### Date ISO
+// @no-log
+GET http://localhost:8000/api/dateIso?value=2022-03-12
+Content-Type: application/json
+Accept: application/json
+
+### Word count
+// @no-log
+POST http://localhost:8000/api/word_count
+Content-Type: application/json
+Accept: application/json
+
+{
+  "text": "2021-07-01 00:27:25 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio facilisis, pulvinar dolor vitae, condimentum libero. Vivamus ac vehicula eros. Vestibulum sagittis nisi et dolor ullamcorper, sit amet faucibus dolor elementum. Etiam at nisi consequat\n2021-07-01 00:00:23 - Sed nec est arcu. Integer erat lorem, tristique nec magna a, ullamcorper vulputate odio"
+}
+
+### Interactions Count
+// @no-log
+POST http://localhost:8000/api/interactions_count
+Content-Type: application/json
+Accept: application/json
+
+{
+  "comments": "2021-07-01 00:27:25 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio facilisis, pulvinar dolor vitae, condimentum libero. Vivamus ac vehicula eros. Vestibulum sagittis nisi et dolor ullamcorper, sit amet faucibus dolor elementum. Etiam at nisi consequat\n2021-07-01 00:00:23 - Sed nec est arcu. Integer erat lorem, tristique nec magna a, ullamcorper vulputate odio"
+}

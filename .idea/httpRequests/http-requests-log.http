@@ -1,0 +1,84 @@
+GET http://localhost:8000/api/cond_error?condition=gt&value=2&expected=9
+Accept: application/json
+
+<> 2022-05-27T142430.200.json
+
+###
+
+GET http://localhost:8000/api/cond_error?condition=gt&value=2&expected=1
+Accept: application/json
+
+<> 2022-05-27T142422.422.json
+
+###
+
+GET http://localhost:8000/api/cond_error?condition=gt&value=2&expected=1
+Accept: application/json
+
+<> 2022-05-27T142352.422.json
+
+###
+
+GET http://localhost:8000/api/cond_error?condition=gt&value=2
+Accept: application/json
+
+<> 2022-05-27T142335.200.json
+
+###
+
+GET http://localhost:8000/api/cond_error?condition=gt
+Accept: application/json
+
+<> 2022-05-27T142309.200.json
+
+###
+
+GET http://localhost:8000/api/cond_error
+Accept: application/json
+
+<> 2022-05-27T142257.422.json
+
+###
+
+POST http://localhost:8000/api/interactions_count
+Content-Type: application/json
+Accept: application/json
+
+{
+  "comments": "2021-07-01 00:27:25 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio facilisis, pulvinar dolor vitae, condimentum libero. Vivamus ac vehicula eros. Vestibulum sagittis nisi et dolor ullamcorper, sit amet faucibus dolor elementum. Etiam at nisi consequat\n2021-07-01 00:00:23 - Sed nec est arcu. Integer erat lorem, tristique nec magna a, ullamcorper vulputate odio"
+}
+
+<> 2022-05-24T142127.200.json
+
+###
+
+POST http://localhost:8000/api/interactions_count
+Content-Type: application/json
+Accept: application/json
+
+{
+  "comments": "2021-07-01 00:27:25 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio facilisis, pulvinar dolor vitae, condimentum libero. Vivamus ac vehicula eros. Vestibulum sagittis nisi et dolor ullamcorper, sit amet faucibus dolor elementum. Etiam at nisi consequat\n2021-07-01 00:00:23 - Sed nec est arcu. Integer erat lorem, tristique nec magna a, ullamcorper vulputate odio"
+}
+
+<> 2022-05-24T142050.404.html
+
+###
+
+POST http://localhost:8000/api/word_count
+Accept: application/json
+
+{"text": "hello"}
+
+<> 2022-05-24T140951.200.json
+
+###
+
+POST http://localhost:8000/api/v1/word_count
+Accept: application/json
+
+{"text": "hello"}
+
+<> 2022-05-24T140842.404.html
+
+###
+

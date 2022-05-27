@@ -34,3 +34,12 @@ Accept: application/json
 {
   "comments": "2021-07-01 00:27:25 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio facilisis, pulvinar dolor vitae, condimentum libero. Vivamus ac vehicula eros. Vestibulum sagittis nisi et dolor ullamcorper, sit amet faucibus dolor elementum. Etiam at nisi consequat\n2021-07-01 00:00:23 - Sed nec est arcu. Integer erat lorem, tristique nec magna a, ullamcorper vulputate odio"
 }
+
+### Random error
+// @no-log
+GET http://localhost:8000/api/random_error
+Accept: application/json
+
+### Conditional error
+GET http://localhost:8000/api/cond_error?condition=gt&value=2&expected=9
+Accept: application/json

@@ -37,9 +37,10 @@ Accept: application/json
 
 ### Random error
 // @no-log
-GET http://localhost:8000/api/random_error
+GET http://localhost:8000/api/random_error?k=0.1
 Accept: application/json
 
 ### Conditional error
+// @no-log
 GET http://localhost:8000/api/cond_error?condition=gt&value=2&expected=9
 Accept: application/json

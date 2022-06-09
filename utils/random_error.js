@@ -1,5 +1,5 @@
-const func = ( ) => {
-    if (Math.random() > 0.5) throw "Random Error";
+const func = ({k = 0.5}) => {
+    if (Math.random() < +k) throw "Random Error";
     return "ok";
 }
 
